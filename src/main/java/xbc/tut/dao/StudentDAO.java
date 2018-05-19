@@ -1,6 +1,7 @@
 package xbc.tut.dao;
 
 import java.util.List;
+import xbc.tut.model.Course;
 import xbc.tut.model.Student;
 
 public interface StudentDAO {

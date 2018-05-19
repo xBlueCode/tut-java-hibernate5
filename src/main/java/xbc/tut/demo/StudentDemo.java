@@ -1,7 +1,7 @@
 package xbc.tut.demo;
 
-import java.util.List;
 import java.util.Scanner;
+import xbc.tut.model.Course;
 import xbc.tut.model.Student;
 import xbc.tut.service.StudentService;
 import xbc.tut.service.StudentServiceImp;

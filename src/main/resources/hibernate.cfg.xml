@@ -24,6 +24,7 @@
 
     <!-- Names the annotated entity classes -->
     <mapping class="xbc.tut.model.Student"></mapping>
+    <mapping class="xbc.tut.model.Course"></mapping>
 
   </session-factory>
 

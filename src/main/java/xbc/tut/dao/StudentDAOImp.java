@@ -3,9 +3,9 @@ package xbc.tut.dao;
 import java.util.List;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
-import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import xbc.tut.model.Course;
 import xbc.tut.model.Student;
 import xbc.tut.util.HibernateUtil;
 
@@ -97,9 +97,7 @@ public class StudentDAOImp implements StudentDAO{
     CriteriaQuery<Student> criteriaQuery = criteriaBuilder.createQuery(Student.class);
     criteriaQuery.from(Student.class);
 
-    List<Student> students = session.createQuery(criteriaQuery).getResultList();
-
-    return students;
+    return session.createQuery(criteriaQuery).getResultList();
   }
 }
 

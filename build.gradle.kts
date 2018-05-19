@@ -12,6 +12,8 @@ repositories {
 dependencies {
     compile("org.hibernate:hibernate-agroal:5.3.0.Final")
     compile("com.h2database:h2:1.4.197")
+    compile("javax.transaction:jta:1.1")
+
     testCompile("junit", "junit", "4.12")
 }
 

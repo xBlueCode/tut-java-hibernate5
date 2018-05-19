@@ -5,11 +5,11 @@ import xbc.tut.model.Course;
 
 public interface CourseDAO {
 
-  boolean addCourse(Course course);
+  int addCourse(Course course);
 
-  boolean updateCourse(Course course);
+  void updateCourse(Course course);
 
-  boolean deleteCourse(Course course);
+  void deleteCourse(Course course);
 
   Course getCourseById(int id);
 

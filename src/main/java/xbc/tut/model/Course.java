@@ -17,9 +17,11 @@ public class Course {
   private String courseLabel ;
 
   @Column(name = "volume")
-  private String volume ;
+  private int volume ;
 
-  public Course(String courseLabel, String volume) {
+  public Course(){}
+
+  public Course(String courseLabel, int volume) {
     this.courseLabel = courseLabel;
     this.volume = volume;
   }
@@ -40,11 +42,20 @@ public class Course {
     this.courseLabel = courseLabel;
   }
 
-  public String getVolume() {
+  public int getVolume() {
     return volume;
   }
 
-  public void setVolume(String volume) {
+  public void setVolume(int volume) {
     this.volume = volume;
+  }
+
+  @Override
+  public String toString() {
+    return "Course{" +
+        "id=" + id +
+        ", courseLabel='" + courseLabel + '\'' +
+        ", volume='" + volume + '\'' +
+        '}';
   }
 }
