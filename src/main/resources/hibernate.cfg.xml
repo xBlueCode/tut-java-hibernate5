@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+  "-//Hibernate/Hibernate Configuration DTD//EN"
+  "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+  <session-factory name="java:hibernate/SessionFactory">
+
+    <!--properties-->
+
+    <!-- Database connection setting -->
+    <property name="connection.driver_class">org.h2.Driver</property>
+    <property name="connection.url">jdbc:h2:./data/school-manager</property>
+
+    <!-- SQL dialect -->
+    <property name="dialect">org.hibernate.dialect.H2Dialect</property>
+
+    <!-- Update the database schema on startup -->
+    <property name="hbm2ddl.auto">update</property>
+
+    <!--show the queries prepared by hibernate-->
+    <property name="hibernate.show_sql"> true </property>
+
+    <!-- Names the annotated entity classes -->
+    <mapping class="xbc.tut.model.Student"></mapping>
+
+  </session-factory>
+
+</hibernate-configuration>
